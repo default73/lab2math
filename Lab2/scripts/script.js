@@ -1,3 +1,21 @@
+function sim(size, arr) {
+	var output = "";
+	for (let i = 0; i < size; i++) {
+		for (let j = 0; j < size; j++) {
+			if (arr[i][j] != arr[j][i]) {
+				output += "Отношение не симметрично";
+				i = size;
+				j = size
+				break;
+			}
+		}
+	}
+	if (output == ""){
+		output += "Отношение симметрично";
+	}
+	document.getElementById("sim").innerHTML = output;
+}
+
 function refl(size, arr) {
 	var output = "";
 	for (var i = 0; i < size; i++) {
@@ -51,6 +69,7 @@ function validate() {
 	}
 	if (corr == 1){
 		refl(size, arr);
+		sim(size, arr);
 	}
 	
 	var output = new String();
