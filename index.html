@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab3dm</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<div>
+    <p>Ввод элементов осуществляется через пробел.<br></p>
+	<p>Пример ввода: 1 1 2 2 3 3 4 4 5 5<br></p>
+    <table id = "matA">
+    <tbody>
+        <tr>
+        <td> <input type="text" pattern="[0-1]" id="a00"> </td>
+        <td> <input type="text" pattern="[0-1]" id="a01"> </td>
+        <td> <input type="text" pattern="[0-1]" id="a02"> </td>
+		<td> <input type="text" pattern="[0-1]" id="a03"> </td>
+        </tr>
+        <tr>
+        <td> <input type="text" pattern="[0-1]" id="a10"> </td>
+        <td> <input type="text" pattern="[0-1]" id="a11"> </td>
+        <td> <input type="text" pattern="[0-1]" id="a12"> </td>
+		<td> <input type="text" pattern="[0-1]" id="a13"> </td>
+        </tr>
+        <tr>
+        <td> <input type="text" pattern="[0-1]" id="a20"> </td>
+        <td> <input type="text" pattern="[0-1]" id="a21"> </td>
+        <td> <input type="text" pattern="[0-1]" id="a22"> </td>
+		<td> <input type="text" pattern="[0-1]" id="a23"> </td>
+        </tr>
+		<tr>
+        <td> <input type="text" pattern="[0-1]" id="a30"> </td>
+        <td> <input type="text" pattern="[0-1]" id="a31"> </td>
+        <td> <input type="text" pattern="[0-1]" id="a32"> </td>
+		<td> <input type="text" pattern="[0-1]" id="a33"> </td>
+        </tr>
+    </tbody>
+        </table>
+
+	<script type="text/javascript" src="scripts/script.js"></script>
+	<button onclick="validate()">Рассчитать</button>
+</body>
+</html>
